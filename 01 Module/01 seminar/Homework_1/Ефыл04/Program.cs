@@ -13,14 +13,12 @@ namespace Ефыл04
             
             int a = int.Parse(U);
             int b = int.Parse(R);
-            
-            if ((b < 0) && (b > 0))
+            if ((b < 0) || (b > 0))
             {
+
                 Console.WriteLine("I=" + (a / b));
                 Console.WriteLine("P=" + ((a * a) / b));
-            
-            } else
-                Console.WriteLine("Вы ввели неверную переменную");
+            }Console.WriteLine("Выполнение программы невозможно");
             
         }
     }
