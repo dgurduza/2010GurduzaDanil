@@ -31,9 +31,9 @@ namespace Task10
             if (y > 0)
             {
                 double k = Math.Sqrt(y);
-                Console.WriteLine($"Корень числа равен:{k}");
+                Console.WriteLine($"Корень числа равен:{k:f3}");
             }
-            Console.WriteLine($"Квадрат числа{t}");
+            Console.WriteLine($"Квадрат числа:{t:f3}");
         }
 
         static void Main(string[] args)

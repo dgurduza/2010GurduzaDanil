@@ -16,13 +16,13 @@ namespace Task9
         /// Метод вычисления процентной части
         /// </summary>
         /// <param name="a">бюджет</param>
-        /// <param name="b">процент на игры</param>
+        /// <param name="b">процент</param>
         /// <returns></returns>
-        public static double M4(double a, double b) 
+        public static double M4(double a, int b) 
         {
-            double x;
-
-            x = a * b;
+            double x,c;
+            c= (double)b;
+            x = a * c;
             Console.WriteLine(string.Format(new CultureInfo("en-US"), "{0:c2}", x));// подключение библиотеки System Globalization для пользования спецификатором валют
             return a;
         }
@@ -32,7 +32,7 @@ namespace Task9
             do
             {
                 double a;
-                double b;
+                int b;
                 do
                 {
                     Console.WriteLine("Введи сумму бюджета");
@@ -42,7 +42,7 @@ namespace Task9
                 {
                     Console.WriteLine("Введи процент бюджета");
                    
-                } while (!double.TryParse(Console.ReadLine(), out b));
+                } while (!int.TryParse(Console.ReadLine(), out b));
                 
                 M4(a, b);//вызов метода
                 Console.WriteLine("Для продолжения введите другие значения");
