@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 
 namespace ConsoleApp1
 {
@@ -6,7 +7,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string text = Console.ReadLine();
+            int a=0;
+            for (a=0;a<3;a++)
+            {
+                Console.WriteLine(text);
+            }
+
         }
     }
 }
